@@ -2,7 +2,7 @@
 
 ## 이체
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Transfer
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -17,7 +17,7 @@
 * tag : 수취인 측에서 사용자를 식별하기 위한 TAG 값
 * memo : 이체 건에 대한 메모
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -35,7 +35,7 @@
 초기 생성 금액이 있는경우 지정된 금액만큼 생성자의 지갑에서 차감됩니다.
 {% endhint %}
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Create
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -76,7 +76,7 @@
 "Home Page" : "http://...."} // { ID : URL, ... }
 ```
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -91,7 +91,7 @@
 >
 > 총 발행 수량역시 차감됩니다.
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Update
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -107,7 +107,7 @@
 * info : NFT에 대한 설명 Markdown 형태로 서술할것
 * socialmedia : SNS 링크 \~\~\~json // token id : amount {"twitter":"htts://www.twitter.com/metacoin", "Home Page" : "http://...."} \~\~\~
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -127,7 +127,7 @@
 초기 생성 금액이 있는경우 해당 금액만큼 생성자의 지갑에서 차감됩니다.
 {% endhint %}
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Mint
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -140,7 +140,7 @@
 * `필수` token : 토큰 ID
 * `필수` amount : 추가 발행할 수량
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -160,7 +160,7 @@
 초기 생성 금액이 있는경우 해당 금액만큼 생성자의 지갑에 추가됩니다.
 {% endhint %}
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Burn
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -173,7 +173,7 @@
 * `필수` token : 토큰 ID
 * `필수` amount : 추가 발행할 수량
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -183,7 +183,7 @@
 
 ## 경매 등록
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Auction
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -205,7 +205,7 @@
 * platform\_name : 거래 플렛폼 이름
 * platform\_url : 거래 플렛폼 url
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -216,7 +216,7 @@
 
 ## 경매 등록 취소
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402UnAuction
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -227,7 +227,7 @@
 * network : [링크 참조](undefined-1.md#network-string)
 * `필수` id : MRC402 DEX ID
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -237,7 +237,7 @@
 
 ## 경매 입찰
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402AuctionBid
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -249,7 +249,7 @@
 * `필수` amount : 경매로 입찰 금
 * `필수` token : MRC 402 ID
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -261,7 +261,7 @@
 
 ## 판매 등록
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Sell
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -279,7 +279,7 @@
 * platform\_name : 거래 플렛폼 이름
 * platform\_url : 거래 플렛폼 url
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -291,7 +291,7 @@
 
 ## 판매 취소
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Unsell
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -302,7 +302,7 @@
 * network : [링크 참조](undefined-1.md#network-string)
 * `필수` id : MRC402 DEX ID
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
@@ -314,7 +314,7 @@
 
 ## 구매
 
-### Query Parameters
+#### Query Parameters
 
 * `필수` appAction : mrc402Buy
 * `필수` appName : [링크 참조](undefined-1.md#appname-string)
@@ -326,7 +326,7 @@
 * `필수` amount : 문자열, 구매 수량
 * `필수` id : MRC 402 ID
 
-### Response
+#### Response
 
 * `필수` appReqKey : 링크 참조
 * `필수` code : 0000(성공), 9999(취소), 0001\~9998(오류)
