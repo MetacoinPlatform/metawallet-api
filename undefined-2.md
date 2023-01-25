@@ -163,7 +163,7 @@ func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
 {% endcode %}
 {% endtab %}
 
-{% tab title="HTML(Web)" %}
+{% tab title="HTML(Mobule Web)" %}
 {% code overflow="wrap" lineNumbers="true" %}
 ```html
 <a href="metawallet://co.inblock?
